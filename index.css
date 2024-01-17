@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background-image: url("assets/background.jpg");
+}
+
+#header {
+    background-color:slateblue;
+    padding: 10px;
+}
+
+
+#title {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: xx-large;
+    color:white;
+    padding-left: 25px;
+    font-weight: 10;
+    display: flex;
+    justify-content: left;
+    width: 128px;
+}
+
+.button a {
+    font-family: 'Kanit', sans-serif;
+    color: azure;
+    text-decoration: none;
+    transition: 1s;
+    margin-left: 100px;
+}
+
+.button :hover {
+    color: lightgreen;
+    font-size: larger;
+    text-decoration:underline;
+    transition: 0.6s;
+}
+ 
