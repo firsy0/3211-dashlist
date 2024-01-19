@@ -12,6 +12,7 @@ body {
     color:#ffffff;
     font-size: 150%;
     display: flex;
+    justify-content: center;
 }
 
 .subtitle {
@@ -34,7 +35,6 @@ body {
     color: azure;
     text-decoration: none;
     transition: 1s;
-    justify-content: space-between;
 }
 
 .button :hover {
@@ -47,11 +47,19 @@ body {
 #header {
     background-image: linear-gradient(to right, #7289da, #536abe);
     padding: 15px;
+}
+#header .title {
+    margin-left: 25px;
+}
+#header div {
     width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
-#header table {
-    width: 75%;
+#header .button a {
+    font-size: x-large;
+    padding-top: 20px;
 }
 
 /*Hero*/
@@ -67,7 +75,7 @@ body {
     padding: 1%;
     background-color: #36393f;
     border: 2px solid #ffffff;
-    border-radius: 25px;
+    border-radius: 10px;
 
 }
 
@@ -85,7 +93,7 @@ body {
     max-width: 30%;
 }
 
-#icon {
+#gd-logo {
     display: flex;
     width: 20%;
     height: 30%;
@@ -97,7 +105,7 @@ body {
 #news .title {
     font-size: xx-large;
 }
-#news .title img{
+.icongd {
     width: 64px;
     height: 64px;
     padding-left: 25px;
@@ -109,27 +117,66 @@ body {
     padding-top: 20px;
     text-align: left;
 }
+/*Pages*/
+/*Footer*/
 
-/*Shortlists*/
-
-#shortlists h1, #news .title {
-    font-size: 50px;
-    justify-content: center;
+#footer {
+    background-color: rgba(114, 137, 218, 0.5);
+    padding: 50px;
 }
 
-#shortlists caption {
-    display: inline;
+#footer ul {
+    list-style: none;
+}
+
+#footer .title {
+    display: inline-flex;
+}
+#footer .text {
+    font-size: small;
+}
+
+#footer .button {
+    font-size: larger;
+}
+
+#footer div {
+    display: inline-table;
+    width: 30%;
+}
+#footer .icongd {
+    display: inline-flex;
+}
+
+/*VL page*/
+
+#vllist table {
+    display: inline-flex;
+    border-radius: 10px;
+    border: 0;
+}
+#vllist td {
+    background-color: slateblue;
+    border: 0;
+}
+
+#vllist .subtitle {
+    padding: 10px;
+}
+
+#vllist .listdesc {
+    width: 25%;
+    justify-content: right; 
+    display: inline-flex;
+}
+
+
+/*in developing page*/
+
+#indev .title {
     width: 100%;
 }
-/*Та як його зробити гарно(*/
 
-/*VL List styles*/
-
-
-#ver_lvl_list {
-    padding: 15px;
-}
-
-#ver_lvl_list table {
-    width: 100%;
+#indev .subtitle {
+    text-align: center;
 }

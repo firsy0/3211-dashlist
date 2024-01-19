@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashlist</title>
+    <link rel="shortcut icon" href="./assets/icon.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">    
@@ -14,25 +15,24 @@
 </head>
 <body>
     <section id="header">
-        <table>
-            <tr>
-                <th class="title">Dashlist</th>
-                <th class="button"><a href="./index.html">Home</a></th>
-                <th class="button"><a href="./vl.html">VL List</a></th>
-                <th class="button"><a href="./chall.html">Challenge List</a></th>
-                <th class="button"><a href="./tpl.html">SL List</a></th>
-                <th class="button"><a href="https://github.com/firsy0" target="_blank">About Author</a></th>
-            </tr>
-        </table>    
+        <div>
+            <h1 class="title">Dashlist</h1>
+            <div class="button"><a href="./index.html">Home</a></div>
+            <div class="button"><a href="./vl.html">Verified List</a></div>
+            <div class="button"><a href="./chall.html">Challenge List</a></div>
+            <div class="button"><a href="./tpl.html">Silent List</a></div>
+        </div> 
     </section>
+
     <section id="hero">
         <h1 class="title">Welcome to fan website of Geometry Dash</h1>
-        <img id="icon" src="./assets/geometry-dash.svg">
+        <img id="gd-logo" src="./assets/geometry-dash.svg">
         <h1 class="subtitle">Dashlist is website where you can read last news of the game and visit lists of the hardest level in Geometry Dash.</h1>
 
     </section>
+
     <section id="news" class="body">
-        <h1 class="title">News for the last month <img src="./assets/cat_icon.png"></h1>
+        <h1 class="title">News for the last month <img class="icongd" src="./assets/cat_icon.png"></h1>
         <table>
             <tr>
                 <th class="subtitle">Title</th>
@@ -60,20 +60,27 @@
             </tr>
         </table>
     </section>
+
     <section id="shortlists" class="body">
         <h1 class="title">Top 3 of every list</h1>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-        <div>
-            
-        </div>
     </section>
-    <section id="footer">
 
+    <section id="footer">
+        <div>
+            <h1 class="title">Contact with author</h1><img class="icongd" src="./assets/steam_icon.png">
+            <p class="text">If you want to add something to the website or correct information in the lists, you can contact me here:</p>
+            <ul>
+                <li class="button"><a href="https://t.me/firsy0" target="_blank">Telegram</a></li>
+                <li class="button"><a href="" target="_blank">Discord</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="title">GitHub of website</h1><img class="icongd" src="./assets/other_cat_icon.png">
+            <p class="text">There you can find a repository of this website:</p>
+            <ul>
+                <li class="button"><a href="https://github.com/firsy0/3211-dashlist" target="_blank">Go to repository</a></li>
+            </ul>
+        </div>
     </section>
 </body>
 </html>
