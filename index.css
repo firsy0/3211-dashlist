@@ -1,61 +1,78 @@
 
+/*Body*/
 body {
     margin: 0;
     background-image: url("assets/background.jpg");
     background-size: cover;
 }
 
-#header {
-    background-color:slateblue;
-    padding: 10px;
-}
-
+/*Text types*/
 .title {
     font-family: 'Dela Gothic One', sans-serif;
-    color:white;
-    font-weight: 10;
+    color:#ffffff;
     font-size: 150%;
     display: flex;
 }
 
 .subtitle {
     font-family: 'Dela Gothic One', sans-serif;
-    color:lightblue;
-    font-weight: 10;
+    color:#ffffff;
     font-size: 120%;
+    font-weight:100;
 }
 
 .text {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Mitr', sans-serif;
     font-size:120%;
-    color: azure;
-
+    font-weight:200;
+    color: #ffffff;
 }
 
 .button a {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Mitr', sans-serif;
     font-size: 90%;
     color: azure;
     text-decoration: none;
     transition: 1s;
-    margin-left: 100px;
+    justify-content: space-between;
 }
 
 .button :hover {
-    color: lightgreen;
+    color: #44ddbf;
     text-decoration:underline;
     transition: 0.6s;
 }
 
-#body,#news,#shortlists {
-    margin: 5%;
-    padding: 1%;
-    background-color: rgb(85, 79, 126);
+/*Header*/
+#header {
+    background-image: linear-gradient(to right, #7289da, #536abe);
+    padding: 15px;
+    width: 100%;
 }
 
-#body .title {
+#header table {
+    width: 75%;
+}
+
+/*Hero*/
+
+#hero {
+    background-image: linear-gradient(to right, #7289da, #536abe); /*Знайшов в інеті*/
+
+}
+
+
+#hero, .body {
+    margin: 5%;
+    padding: 1%;
+    background-color: #36393f;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+
+}
+
+#hero .title {
     font-size: calc(0.5em + 2.5vw);
-    /*Я знайшов в інеті як зробити розмір тексту відносно розміру вікна,*/
     padding-left: 2.5%;
     display: flex;
     float: left;
@@ -63,26 +80,56 @@ body {
     max-height: 100px;
 }
 
-#icon {
-    display: flex;
-    width: 25%;
-    justify-content: right;
+#hero .subtitle {
+    padding-left: 2.5%;
+    max-width: 30%;
 }
 
+#icon {
+    display: flex;
+    width: 20%;
+    height: 30%;
+    justify-content: right;
+    image-rendering: optimizeQuality;
+}
+
+/*News*/
 #news .title {
     font-size: xx-large;
 }
-
+#news .title img{
+    width: 64px;
+    height: 64px;
+    padding-left: 25px;
+}
+#news table {
+    width: 95%;
+}
 #news th {
     padding-top: 20px;
     text-align: left;
 }
 
+/*Shortlists*/
+
 #shortlists h1, #news .title {
     font-size: 50px;
     justify-content: center;
 }
-#shortlists table {
-    display: flex;
-    justify-content: space-around;
+
+#shortlists caption {
+    display: inline;
+    width: 100%;
+}
+/*Та як його зробити гарно(*/
+
+/*VL List styles*/
+
+
+#ver_lvl_list {
+    padding: 15px;
+}
+
+#ver_lvl_list table {
+    width: 100%;
 }
