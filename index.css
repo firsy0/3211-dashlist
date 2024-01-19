@@ -1,22 +1,37 @@
-/*Стилі для усіх сторінок*/
+
 body {
     margin: 0;
     background-image: url("assets/background.jpg");
     background-size: cover;
 }
+
 #header {
     background-color:slateblue;
     padding: 10px;
 }
+
 .title {
     font-family: 'Dela Gothic One', sans-serif;
     color:white;
-    padding-left: 25px;
     font-weight: 10;
     font-size: 150%;
     display: flex;
-    justify-content: left;
 }
+
+.subtitle {
+    font-family: 'Dela Gothic One', sans-serif;
+    color:lightblue;
+    font-weight: 10;
+    font-size: 120%;
+}
+
+.text {
+    font-family: 'Raleway', sans-serif;
+    font-size:120%;
+    color: azure;
+
+}
+
 .button a {
     font-family: 'Raleway', sans-serif;
     font-size: 90%;
@@ -32,20 +47,42 @@ body {
     transition: 0.6s;
 }
 
-#body {
+#body,#news,#shortlists {
     margin: 5%;
     padding: 1%;
-    background-color: rgb(63, 56, 107);
+    background-color: rgb(85, 79, 126);
 }
 
 #body .title {
-    font-size: 70px;
+    font-size: calc(0.5em + 2.5vw);
+    /*Я знайшов в інеті як зробити розмір тексту відносно розміру вікна,*/
+    padding-left: 2.5%;
     display: flex;
     float: left;
-    width: 69%;
+    max-width: 70%;
+    max-height: 100px;
 }
 
 #icon {
     display: flex;
-    width: 29%;
+    width: 25%;
+    justify-content: right;
+}
+
+#news .title {
+    font-size: xx-large;
+}
+
+#news th {
+    padding-top: 20px;
+    text-align: left;
+}
+
+#shortlists h1, #news .title {
+    font-size: 50px;
+    justify-content: center;
+}
+#shortlists table {
+    display: flex;
+    justify-content: space-around;
 }
